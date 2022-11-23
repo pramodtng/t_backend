@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "retailers",
+  "info": {
+    "singularName": "retailer",
+    "pluralName": "retailers",
+    "displayName": "retailer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "number": {
+      "type": "integer"
+    }
+  }
+}
