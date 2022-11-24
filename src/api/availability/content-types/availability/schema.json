@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "availabilities",
+  "info": {
+    "singularName": "availability",
+    "pluralName": "availabilities",
+    "displayName": "Availability ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "phone": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::phone.phone",
+      "mappedBy": "availability"
+    },
+    "thimphu": {
+      "type": "richtext"
+    },
+    "paro": {
+      "type": "richtext"
+    },
+    "phuntsholing": {
+      "type": "richtext"
+    },
+    "samtse": {
+      "type": "richtext"
+    },
+    "bumthang": {
+      "type": "richtext"
+    },
+    "gelephu": {
+      "type": "richtext"
+    },
+    "mongar": {
+      "type": "richtext"
+    },
+    "samdrupjongkhar": {
+      "type": "richtext"
+    },
+    "trashigang": {
+      "type": "richtext"
+    },
+    "tsirang": {
+      "type": "richtext"
+    },
+    "wangdue": {
+      "type": "richtext"
+    }
+  }
+}

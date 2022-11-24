@@ -4,7 +4,8 @@
   "info": {
     "singularName": "phone",
     "pluralName": "phones",
-    "displayName": "phone"
+    "displayName": "phone",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,17 +22,35 @@
       "type": "integer"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
-    "content": {
+    "network": {
       "type": "richtext"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "selling",
+        "latest",
+        "flagship"
+      ]
+    },
+    "availability": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::availability.availability",
+      "inversedBy": "phone"
+    },
+    "desc": {
+      "type": "text"
     }
   }
 }
