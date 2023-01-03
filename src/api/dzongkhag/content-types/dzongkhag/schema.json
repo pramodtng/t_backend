@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dzongkhags",
+  "info": {
+    "singularName": "dzongkhag",
+    "pluralName": "dzongkhags",
+    "displayName": "dzongkhag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "retailers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::retailer.retailer",
+      "mappedBy": "dzongkhag"
+    }
+  }
+}

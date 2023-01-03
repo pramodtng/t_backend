@@ -43,14 +43,17 @@
         "flagship"
       ]
     },
+    "desc": {
+      "type": "text"
+    },
     "availability": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::availability.availability",
       "inversedBy": "phone"
     },
-    "desc": {
-      "type": "text"
+    "freebies": {
+      "type": "richtext"
     }
   }
 }

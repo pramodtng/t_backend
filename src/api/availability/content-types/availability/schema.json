@@ -12,44 +12,26 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "babesa": {
+      "type": "richtext"
+    },
+    "jungshina": {
+      "type": "richtext"
+    },
+    "mlcp": {
+      "type": "richtext"
+    },
+    "thimphu": {
+      "type": "richtext"
+    },
+    "phuentsholing": {
+      "type": "richtext"
+    },
     "phone": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::phone.phone",
       "mappedBy": "availability"
-    },
-    "thimphu": {
-      "type": "richtext"
-    },
-    "paro": {
-      "type": "richtext"
-    },
-    "phuntsholing": {
-      "type": "richtext"
-    },
-    "samtse": {
-      "type": "richtext"
-    },
-    "bumthang": {
-      "type": "richtext"
-    },
-    "gelephu": {
-      "type": "richtext"
-    },
-    "mongar": {
-      "type": "richtext"
-    },
-    "samdrupjongkhar": {
-      "type": "richtext"
-    },
-    "trashigang": {
-      "type": "richtext"
-    },
-    "tsirang": {
-      "type": "richtext"
-    },
-    "wangdue": {
-      "type": "richtext"
     }
   }
 }

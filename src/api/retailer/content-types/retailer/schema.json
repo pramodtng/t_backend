@@ -4,7 +4,8 @@
   "info": {
     "singularName": "retailer",
     "pluralName": "retailers",
-    "displayName": "retailer"
+    "displayName": "retailer",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,24 +15,14 @@
     "name": {
       "type": "string"
     },
-    "email": {
-      "type": "email"
-    },
-    "address": {
+    "location": {
       "type": "text"
     },
-    "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "number": {
-      "type": "integer"
+    "dzongkhag": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::dzongkhag.dzongkhag",
+      "inversedBy": "retailers"
     }
   }
 }
